@@ -17,31 +17,40 @@ number_students = 20
 string_teachers = "4"
 numberDogs = 0
 
-# EXAMPLE: print the result of the comparison: is number_seachers greater than number_students?
+# EXAMPLE: print the result of the comparison: is number_teachers greater than number_students?
 puts "Is number_teachers greater than number_students?", number_teachers > number_students
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
 
+puts "is number_teachers less than number_students?", number_teachers < number_students
+
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
 
+puts "is number_teachers equal to string_teachers?", number_teachers == string_teachers
+
+
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
+puts "is number_teachers not equal to number_students?", number_teachers != number_students
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
+puts "is number_students greater than or equal to 20?", number_students >= 20
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
+puts "is number_students greater than or equal to 21?", number_students >= 21 
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
+puts "is number_students less than or equal to 20?", number_students <= 20
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
-
+puts "is number_students less than or equal to 21?", number_students <= 21
 
 #-------------------
 # PART 2: Articulating what you are doing
@@ -53,21 +62,21 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+#YOU DO: This is asking if the integer 4 is less than 9. It should come back true
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# YOU DO: the variable "books" is designated as integer 3. the code is asking if integer 4 is less than 3. this should print: false
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# YOU DO: the variables "friends" and "siblings" are designated as integers 6 and 2 respectively. the puts code is asking if 6 is greater than 2; the console should print "true"
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# YOU DO: This is asking if the number of attendees does not equal the number of meals provided. They are not equal so the console will print True
 
 
 #-------------------
@@ -90,15 +99,16 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && "the dog is #{age} years old and is a puppy"
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: We didnt have an "if" statement so I used interpolation to state that at 1 years old, the dog is a puppy (note: not a dog owner so I have no idea when they are conisdered not a puppy)
